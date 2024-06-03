@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "665634292524",
+    "firebase_url": "https://pineustilu-c66fe-default-rtdb.firebaseio.com",
+    "project_id": "pineustilu-c66fe",
+    "storage_bucket": "pineustilu-c66fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665634292524:android:5669237b976543c4f32289",
+        "android_client_info": {
+          "package_name": "com.example.page1fix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "665634292524-g7l9n7i28ggn5pcmkn3b3n1sk78a30vv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALClza9aegzqdZhRlGEE7gK0CcVsIjmzA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "665634292524-g7l9n7i28ggn5pcmkn3b3n1sk78a30vv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665634292524:android:00637286dbe9a8a5f32289",
+        "android_client_info": {
+          "package_name": "com.example.tubesrafif"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "665634292524-g7l9n7i28ggn5pcmkn3b3n1sk78a30vv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALClza9aegzqdZhRlGEE7gK0CcVsIjmzA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "665634292524-g7l9n7i28ggn5pcmkn3b3n1sk78a30vv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

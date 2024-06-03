@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bgmalem">
+
+    <ImageView
+        android:id="@+id/orgkemping"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:src="@drawable/orgkemping"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/qnez"
+        app:layout_constraintTop_toBottomOf="@+id/now" />
+
+    <TextView
+        android:id="@+id/Camp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:text="Camp"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:fontFamily="@font/poppinbold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/orgkemping"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:fontFamily="@font/poppinbold"
+        android:text="Now"
+        android:textColor="@color/biru"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="@id/Camp"
+        app:layout_constraintTop_toBottomOf="@+id/Camp"
+        app:layout_constraintStart_toStartOf="@id/Camp"/>
+
+    <TextView
+        android:id="@+id/qnez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinbold"
+        android:text="Quick and Easy \nto book at Pineus Tilu \nanywhere, anytime"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@id/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orgkemping" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="255sp"
+        android:layout_height="45sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/qnez"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Login"
+        android:fontFamily="@font/poppinbold"
+        android:textColorHint="@color/black"
+        android:backgroundTint="@color/white"/>
+
+    <TextView
+        android:id="@+id/OR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/login"
+        app:layout_constraintStart_toStartOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="120dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/OR"
+        app:layout_constraintTop_toBottomOf="@id/login" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="2dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toBottomOf="@id/login"
+        app:layout_constraintStart_toEndOf="@id/OR"
+        android:layout_marginStart="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ig"
+        android:layout_width="265sp"
+        android:layout_height="45sp"
+        android:background="@drawable/warnaig"
+        android:hint="Sign up with Instagram"
+        android:paddingLeft="40sp"
+        android:paddingBottom="10sp"
+        android:textColorHint="@color/putih"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@id/login"
+        app:layout_constraintStart_toStartOf="@id/login"
+        app:layout_constraintTop_toBottomOf="@+id/OR" />
+
+    <Button
+        android:id="@+id/gugel"
+        android:layout_width="255sp"
+        android:layout_height="45sp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/logogugel"
+        android:hint="Sign up with Google"
+        android:paddingLeft="26sp"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/ig"
+        app:layout_constraintStart_toStartOf="@id/ig"
+        app:layout_constraintTop_toBottomOf="@+id/ig" />
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:fontFamily="@font/poppinssemibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/dont"
+        app:layout_constraintTop_toBottomOf="@+id/gugel" />
+
+    <TextView
+        android:id="@+id/dont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="70dp"
+        android:layout_marginStart="25dp"
+        android:text="Don't Have an account?"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinssemibold"
+        android:layout_marginBottom="20dp"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgot" />
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/poppinbold"
+        android:paddingEnd="100dp"
+        android:text="Sign up"
+        android:textColor="@color/hijau3"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dont"
+        app:layout_constraintTop_toBottomOf="@+id/forgot" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
