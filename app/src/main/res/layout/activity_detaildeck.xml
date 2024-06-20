@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F7F7F7"
+    android:fillViewport="true"
+    tools:context=".DetaildeckActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/header_dbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="26dp"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Pineus Tilu"
+            android:textColor="@color/hitam"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/avail_dbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="23dp"
+            android:fontFamily="@font/raleway"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@id/header_dbd"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/threedots_pp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showPopupMenuEntertainDet"
+            android:padding="15dp"
+            android:src="@drawable/menu"
+            app:layout_constraintBottom_toBottomOf="@+id/header_dbd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.87"
+            app:layout_constraintStart_toEndOf="@+id/header_dbd"
+            app:layout_constraintTop_toTopOf="@+id/header_dbd" />
+
+        <ImageView
+            android:id="@+id/mainpic_dbd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/detailpic_entertaindetail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header_dbd" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalscr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mainpic_dbd">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/fotoslide1"
+                    android:layout_width="108dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/detailpic_entertaindetail" />
+
+                <ImageView
+                    android:id="@+id/fotoslide2"
+                    android:layout_width="108dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/detailpic_entertaindetail" />
+
+                <ImageView
+                    android:id="@+id/fotoslide3"
+                    android:layout_width="108dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/detailpic_entertaindetail" />
+
+                <ImageView
+                    android:id="@+id/fotoslide4"
+                    android:layout_width="108dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/detailpic_entertaindetail" />
+
+                <ImageView
+                    android:id="@+id/fotoslide5"
+                    android:layout_width="108dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/detailpic_entertaindetail" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/h2_dbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Deck 2"
+            android:textColor="@color/hitam"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/b2_dbd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalscr"></TextView>
+
+        <TextView
+            android:id="@+id/b2_dbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Deck 2 berada di pesisir sungai sehingga memudahkan pengunjung untuk berenang dan menikmati alam"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.006"
+            app:layout_constraintStart_toStartOf="@id/h2_dbd"
+            app:layout_constraintTop_toBottomOf="@+id/h2_dbd" />
+
+        <TextView
+            android:id="@+id/fpub_dbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="250dp"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Fasilitas Deck 2"
+            android:textColor="@color/hitam"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/b2_dbd" />
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/fasilitas"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:fontFamily="@font/raleway_bold"-->
+        <!--            android:text="@string/fasilitas_rafting"-->
+        <!--            android:textSize="14sp"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.0"-->
+        <!--            app:layout_constraintStart_toStartOf="@id/fpub_dbd"-->
+        <!--            tools:layout_editor_absoluteY="545dp" />-->
+
+        <TextView
+            android:id="@+id/tglbook_dbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/raleway"
+            android:text="Tanggal Booking"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/fpub_dbd"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+        <TextView
+            android:id="@+id/textViewTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="12-12-2023 s/d 23-23-2023"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tglbook_dbd"
+            app:layout_constraintTop_toBottomOf="@+id/tglbook_dbd" />
+
+        <TextView
+            android:id="@+id/harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Harga : Rp 600.000"
+            android:textColor="@color/hitam2"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/textViewTanggal"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTanggal" />
+
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/btn_book_dbd"
+            android:layout_width="178dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="50dp"
+            app:cardBackgroundColor="@color/green"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/harga"
+            app:layout_editor_absoluteY="1074dp">
+
+            <TextView
+                android:id="@+id/booktext_dbd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/raleway"
+                android:text="Book"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_book_dbd"
+                app:layout_constraintEnd_toEndOf="@+id/btn_book_dbd"
+                app:layout_constraintStart_toStartOf="@+id/btn_book_dbd"
+                app:layout_constraintTop_toTopOf="@+id/btn_book_dbd" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/btn_kembali_dbd"
+            android:layout_width="178dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            app:cardBackgroundColor="@color/abu4"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/harga">
+
+            <TextView
+                android:id="@+id/booktextkmbl_dbd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/raleway"
+                android:text="kembali"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_kembali_dbd"
+                app:layout_constraintEnd_toEndOf="@+id/btn_kembali_dbd"
+                app:layout_constraintStart_toStartOf="@+id/btn_kembali_dbd"
+                app:layout_constraintTop_toTopOf="@+id/btn_kembali_dbd" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fpub_dbd">
+
+            <ImageView
+                android:id="@+id/toilet_dbd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="28dp"
+                android:src="@drawable/toilet_dbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/toilettxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/raleway"
+                android:text="Toilet"
+                app:layout_constraintStart_toStartOf="@+id/toilet_dbd"
+                app:layout_constraintTop_toBottomOf="@+id/toilet_dbd"
+                app:layout_constraintEnd_toEndOf="@+id/toilet_dbd"/>
+
+
+            <ImageView
+                android:id="@+id/diningtable_dbd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="28dp"
+                android:src="@drawable/diningtable_dbd"
+                app:layout_constraintStart_toEndOf="@id/toilet_dbd"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/diningtabletxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/raleway"
+                android:text="Dining Table"
+                app:layout_constraintStart_toStartOf="@id/diningtable_dbd"
+                app:layout_constraintTop_toBottomOf="@id/diningtable_dbd"
+                app:layout_constraintEnd_toEndOf="@id/diningtable_dbd"/>
+
+            <ImageView
+                android:id="@+id/campfire_dbd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="28dp"
+                android:src="@drawable/campfire"
+                app:layout_constraintStart_toEndOf="@id/diningtable_dbd"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/campfiretxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/raleway"
+                android:text="Campfire"
+                app:layout_constraintStart_toStartOf="@id/campfire_dbd"
+                app:layout_constraintTop_toBottomOf="@id/campfire_dbd"
+                app:layout_constraintEnd_toEndOf="@id/campfire_dbd"/>
+
+            <ImageView
+                android:id="@+id/bbqgrill_dbd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="64dp"
+                android:src="@drawable/bbqgrill_dbd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/campfire_dbd"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/bbqgrilltxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/raleway"
+                android:text="BBQ Grill"
+                app:layout_constraintEnd_toEndOf="@id/bbqgrill_dbd"
+                app:layout_constraintStart_toStartOf="@id/bbqgrill_dbd"
+                app:layout_constraintTop_toBottomOf="@id/bbqgrill_dbd" />
+
+            <ImageView
+                android:id="@+id/hammock_dbd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/hammock_dbd"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/toilettxt"
+                app:layout_constraintStart_toStartOf="@+id/toilettxt"
+                app:layout_constraintTop_toBottomOf="@+id/toilettxt" />
+
+            <TextView
+                android:id="@+id/hammocktxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/raleway"
+                android:text="Hammock"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/hammock_dbd"
+                app:layout_constraintStart_toStartOf="@id/hammock_dbd"
+                app:layout_constraintTop_toBottomOf="@id/hammock_dbd" />
+
+            <ImageView
+                android:id="@+id/playpool_dbd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/playpool_dbd"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.206"
+                app:layout_constraintStart_toEndOf="@+id/hammock_dbd"
+                app:layout_constraintTop_toBottomOf="@+id/diningtabletxt" />
+
+            <TextView
+                android:id="@+id/playpooltxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/raleway"
+                android:text="Play Pool"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/playpool_dbd"
+                app:layout_constraintStart_toStartOf="@id/playpool_dbd"
+                app:layout_constraintTop_toBottomOf="@id/playpool_dbd" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
